@@ -1,0 +1,272 @@
+@import './colors.module.scss';
+
+.container {
+  color: black;
+}
+
+.main {
+  min-height: 100vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  margin-top: 20px;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title {
+  //color: black;
+  position: relative;
+  overflow: visible;
+  margin: 0;
+  line-height: 1.15;
+  font-size: 3rem;
+  left: 10rem;
+  top: 4rem;
+}
+
+.description {
+  grid-area: description;
+  align-self: start;
+  margin: 10px 10px;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 1fr 20% 20%;
+  grid-template-areas:
+    'box pic'
+    'description description'
+    'arrow arrow';
+  min-height: 92vh;
+  width: 100%;
+  background-image: $gradient-bottom-left;
+}
+
+.logo {
+  margin-left: 1rem;
+  padding: 2px 6px;
+  border-radius: 15px;
+  background-color: #eaeaea;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
+  background-image: $gradient-bottom-left;
+}
+
+.hero-pic {
+  grid-area: pic;
+  border-radius: 50%;
+  align-self: center;
+  margin-right: 10px;
+}
+
+.box {
+  grid-area: box;
+  background-color: #a8a8a8;
+  border-radius: 15px;
+  overflow: visible;
+  width: 25vw;
+  //width: 20rem;
+  height: 60vh;
+  display: block;
+  margin: 2rem;
+}
+
+.arrow {
+  grid-area: arrow;
+  align-self: start;
+  border-left: 0.5rem solid #fff;
+  border-bottom: 0.5rem solid #fff;
+  width: 2rem;
+  height: 2rem;
+  transform: rotate(-45deg);
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0) rotate(-45deg);
+  }
+  40% {
+    transform: translateY(-30px) rotate(-45deg);
+  }
+  60% {
+    transform: translateY(-15px) rotate(-45deg);
+  }
+}
+
+.skills-container {
+  display: grid;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 15px 0px;
+}
+
+.skills-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 102px;
+  width: 102px;
+  border-radius: 15px;
+  background-color: #eee;
+  box-shadow: 5px 2px 5px $orange-web;
+}
+
+.skills-card:hover {
+  box-shadow: 8px 4px 8px $selective-yellow;
+  background-color: #fafafa;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+  width: 90%;
+  padding: 15px 0px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 250px;
+  background-color: #eee;
+  color: black;
+  padding: 10px 5px;
+  border-radius: 15px;
+  box-shadow: 5px 2px 5px $orange-web;
+}
+
+.project-pic {
+  border-radius: 15px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  padding: 15px 0px;
+}
+
+.contact-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  height: 142px;
+  width: 142px;
+  border-radius: 50%;
+  box-shadow: 5px 2px 5px $orange-web;
+}
+
+.contact-card:hover {
+  background-color: #fafafa;
+  box-shadow: 7px 4px 7px $persimmon;
+}
+
+@media (max-width: 380px) {
+  .grid {
+    grid-template-areas:
+      'box box'
+      'pic description'
+      'arrow arrow';
+  }
+  .title {
+    font-size: 14px;
+  }
+  .description {
+    font-size: 0.5rem;
+  }
+  .box {
+    width: 350px;
+    height: 550px;
+  }
+}
+
+@media (max-width: 450px) {
+  .box {
+    width: 125px;
+    height: 200px;
+  }
+  .title {
+    font-size: 1.5rem;
+    left: 5rem;
+    top: 2rem;
+  }
+  .description {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .title {
+    font-size: 2rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .description {
+    font-size: 1.25rem;
+  }
+}

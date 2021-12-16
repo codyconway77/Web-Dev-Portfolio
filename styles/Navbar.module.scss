@@ -1,0 +1,41 @@
+@import './colors.module.scss';
+
+.nav {
+  display: flex;
+  height: 64px;
+  width: 100%;
+  background-color: #eee;
+  box-shadow: 2px 0px 3px #a8a8a8;
+  justify-content: flex-end;
+  gap: 14px;
+  align-items: center;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.nav * {
+  padding: 26px 50px;
+  color: black;
+  //line-height: 1.75rem;
+  font: bold;
+}
+
+.nav-link:hover {
+  background: $gradient-left;
+  color: white;
+  display: inline-block;
+  line-height: 1rem;
+  border-radius: 40px;
+}
+
+@media (max-width: 500px) {
+  .nav {
+    gap: 8px;
+  }
+  .nav * {
+    padding: 16px 50px;
+  }
+}
