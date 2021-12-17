@@ -33,6 +33,16 @@
 
 @media (max-width: 500px) {
   .nav {
-    gap: 0;
+    all: initial;
+    display: flex;
+    background-color: #eee;
+    justify-content: space-around;
+    align-items: center;
+    height: 64px;
+    width: 100%;
+  }
+  .nav * {
+    all: initial;
+    font: bold;
   }
 }

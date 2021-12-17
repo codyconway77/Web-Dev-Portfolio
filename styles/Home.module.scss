@@ -241,6 +241,10 @@
     width: 80%;
     height: 200px;
   }
+  .contact-container {
+    width: 100%;
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: 400px) and (max-width: 450px) {
@@ -267,6 +271,9 @@
   }
   .description {
     font-size: 0.75rem;
+  }
+  .contact-container {
+    width: 100%;
   }
 }
 
