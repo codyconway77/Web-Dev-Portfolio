@@ -221,39 +221,56 @@
 
 @media (max-width: 380px) {
   .grid {
-    grid-template-areas:
-      'box box'
-      'pic description'
-      'arrow arrow';
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
   }
   .title {
-    font-size: 14px;
+    white-space: nowrap;
+    font-size: 1.8rem;
+    left: -10px;
+    top: 0;
   }
   .description {
     font-size: 0.5rem;
   }
   .box {
-    width: 350px;
-    height: 550px;
+    width: 80%;
+    height: 200px;
   }
 }
 
-@media (max-width: 450px) {
+@media (min-width: 400px) and (max-width: 450px) {
+  .grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-pic {
+    margin-top: -10px;
+  }
   .box {
-    width: 125px;
+    width: 80%;
     height: 200px;
   }
   .title {
-    font-size: 1.5rem;
-    left: 5rem;
-    top: 2rem;
+    white-space: nowrap;
+    font-size: 2.2rem;
+    left: -10px;
+    top: 0;
   }
   .description {
     font-size: 0.75rem;
   }
 }
 
-@media (max-width: 700px) {
+@media (min-width: 360) and (max-width: 700px) {
   .title {
     font-size: 2rem;
   }
@@ -262,7 +279,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (min-width: 450px) and (max-width: 900px) {
   .title {
     font-size: 2.5rem;
   }

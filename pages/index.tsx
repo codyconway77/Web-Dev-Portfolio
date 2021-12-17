@@ -38,9 +38,9 @@ const Home: NextPage = () => {
 
         <div className={styles.grid}>
           <div className={styles.box}>
-            <h1 className={styles.title}>
-              My name is Cody and I design and implement awesome web designs.
-            </h1>
+            <h3 className={styles.title}>
+              My name is Cody<br/>and I design and<br/>implement awesome<br/>web designs.
+            </h3>
           </div>
           <Image layout='intrinsic' width={350} height={420} src={ProfilePic} alt="picture of my face" className={styles['hero-pic']} />
 
