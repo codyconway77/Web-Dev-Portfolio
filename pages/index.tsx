@@ -50,8 +50,8 @@ const Home: NextPage = () => {
           </p>
           <span className={[styles.arrow, styles.bounce].join(' ')}></span>
         </div>
-        <h2>Skills</h2>
-        <div id="skills" className={styles['skills-container']}>
+        <h2 id="skills">Skills</h2>
+        <div className={styles['skills-container']}>
           <div className={styles['skills-card']}>
             <HtmlIcon />
           </div>
@@ -89,8 +89,8 @@ const Home: NextPage = () => {
             <PostgresIcon />
           </div>
         </div>
-        <h2>Projects</h2>
-        <div id="projects" className={styles["projects-container"]}>
+        <h2 id="projects">Projects</h2>
+        <div className={styles["projects-container"]}>
           <div className={styles['project-card']}>
             <h3>Calculator App</h3>
             <a href='https://eager-euclid-acf984.netlify.app/' target={'_blank'} rel='noreferrer'>
@@ -116,8 +116,8 @@ const Home: NextPage = () => {
             </a>
           </div>
         </div>
-        <h2>Contact Me</h2>
-        <div id="contact" className={styles['contact-container']}>
+        <h2 id="contact">Contact Me</h2>
+        <div className={styles['contact-container']}>
           <a className={styles['contact-card']} rel="noreferrer" target={"_blank"} href="https://github.com/codyconway77">
             <GithubIcon />
           </a>
