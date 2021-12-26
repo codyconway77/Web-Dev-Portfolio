@@ -23,12 +23,14 @@
   font: bold;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
   background: $gradient-left;
   color: white;
   display: inline-block;
   line-height: 1rem;
   border-radius: 40px;
+  outline: none;
 }
 
 @media (max-width: 500px) {

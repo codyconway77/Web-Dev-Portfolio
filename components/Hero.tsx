@@ -16,7 +16,7 @@ function Hero() {
           <p className={styles.description}>
             I&#39;m a developer that loves to learn cutting edge technologies and enjoy the feeling of overcoming a challenge.
           </p>
-          <span className={[styles.arrow, styles.bounce].join(' ')}></span>
+          <a href='#skills' className={[styles.arrow, styles.bounce].join(' ')}></a>
         </div>
     )
 }

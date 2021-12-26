@@ -214,9 +214,11 @@
   box-shadow: 5px 2px 5px $orange-web;
 }
 
-.contact-card:hover {
+.contact-card:hover,
+.contact-card:focus {
   background-color: #fafafa;
   box-shadow: 7px 4px 7px $persimmon;
+  outline: none;
 }
 
 @media (max-width: 380px) {
