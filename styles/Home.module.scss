@@ -98,7 +98,8 @@
 
 .box {
   grid-area: box;
-  background-color: #a8a8a8;
+  background-color: $vermilion;
+  box-shadow: 5px 2px 5px $persimmon;
   border-radius: 15px;
   overflow: visible;
   width: 25vw;
