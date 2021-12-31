@@ -17,7 +17,7 @@ function Hero() {
           </div>
           
           <div className={styles['image-wrapper']}>
-            <Image width={420} height={420} src={ProfilePic} alt="picture of my face" className={styles['image']} />
+            <Image width={380} height={420} src={ProfilePic} alt="picture of my face" className={styles['image']} />
 
           </div>
 
