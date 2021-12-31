@@ -5,13 +5,24 @@ import ProfilePic from '../public/IMG_0019.jpg'
 
 function Hero() {
     return (
-        <div className={styles.grid}>
-          <div className={styles.box}>
-            <h3 className={styles.title}>
-              My name is Cody<br/>and I design and<br/>implement awesome<br/>web designs.
-            </h3>
+        <div className={styles.hero2}>
+          <div className={styles['hero-offset']}>
+            <div className={styles.box}>
+            
+            </div>
+              <h3 className={styles.title}>
+                My name is Cody and I design and implement awesome web designs.
+              </h3>
+
           </div>
-          <Image layout='intrinsic' width={350} height={420} src={ProfilePic} alt="picture of my face" className={styles['hero-pic']} />
+          
+          <div className={styles['image-wrapper']}>
+            <Image width={420} height={420} src={ProfilePic} alt="picture of my face" className={styles['image']} />
+
+          </div>
+
+          
+          
 
           <p className={styles.description}>
             I&#39;m a developer that loves to learn cutting edge technologies and enjoy the feeling of overcoming a challenge.
