@@ -74,15 +74,7 @@ $gradient-bottom: linear-gradient(
   #faa307ff,
   #ffba08ff
 );
-$gradient-left: linear-gradient(
-  270deg,
-  #d00000ff,
-  #dc2f02ff,
-  #e85d04ff,
-  #f48c06ff,
-  #faa307ff,
-  #ffba08ff
-);
+$gradient-left: linear-gradient(270deg, #3494e6, #ec6ead);
 $gradient-top-right: linear-gradient(
   45deg,
   #03071eff,
@@ -133,15 +125,6 @@ $gradient-bottom-left: linear-gradient(
   #faa307ff,
   #ffba08ff
 );
-$gradient-radial: radial-gradient(
-  #03071eff,
-  #370617ff,
-  #6a040fff,
-  #9d0208ff,
-  #d00000ff,
-  #dc2f02ff,
-  #e85d04ff,
-  #f48c06ff,
-  #faa307ff,
-  #ffba08ff
-);
+$gradient-radial: radial-gradient(#3494e6, #ec6ead);
+
+$gradient-radial-reverse: radial-gradient(#ec6ead, #3494e6);

@@ -4,8 +4,8 @@
   display: flex;
   height: 8vh;
   width: 100%;
-  background-color: #eee;
-  box-shadow: 2px 0px 3px #a8a8a8;
+  background-color: #bbdbf7;
+  border-bottom: 1px solid black;
   justify-content: flex-end;
   gap: 14px;
   align-items: center;
@@ -25,7 +25,7 @@
 
 .nav-link:hover,
 .nav-link:focus {
-  background: $gradient-left;
+  background: $gradient-radial-reverse;
   color: white;
   display: inline-block;
   line-height: 1rem;
