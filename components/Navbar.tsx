@@ -4,11 +4,23 @@ import navbar from '../styles/Navbar.module.scss'
 
 function Navbar() {
     return (
-        <div className={navbar.nav}>
-            <UseDarkMode />
-            <a className={navbar['nav-link']} href="#skills">Skills</a>
-            <a className={navbar['nav-link']} href="#projects">Projects</a>
-            <a className={navbar['nav-link']} href="#contact">Contact</a>
+        <div className={navbar['nav-wrapper']}>
+            <nav className={[navbar.nav, navbar.stroke].join(' ')}>
+                <ul>
+                    <li>
+                        <UseDarkMode />
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     )
 }

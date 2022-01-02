@@ -1,50 +1,133 @@
 @import './colors.module.scss';
 
+.nav-wrapper {
+  width: 100%;
+  background: #0000cc;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 750px) {
+  .nav-wrapper {
+    justify-content: center;
+  }
+}
+
 .nav {
   display: flex;
-  height: 8vh;
-  width: 100%;
-  background-color: #bbdbf7;
-  border-bottom: 1px solid black;
-  justify-content: flex-end;
-  gap: 14px;
-  align-items: center;
-  user-select: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+  margin-right: 12px;
+  justify-content: space-around;
+  padding: 1rem 0;
+  box-shadow: 0px 5px 0px #dedede;
 }
-
-.nav * {
-  padding: 26px 50px;
-  color: black;
-  //line-height: 1.75rem;
-  font: bold;
+.nav ul {
+  list-style: none;
+  text-align: center;
 }
-
-.nav-link:hover,
-.nav-link:focus {
-  background: $gradient-radial-reverse;
-  color: white;
+.nav ul li {
   display: inline-block;
-  line-height: 1rem;
-  border-radius: 40px;
-  outline: none;
+}
+.nav ul li a {
+  display: block;
+  padding: 3px 0;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+.nav ul li a,
+.nav ul li a:after,
+.nav ul li a:before {
+  transition: all 0.5s;
+}
+.nav ul li a:hover {
+  color: #fff;
+  font-size: 1.1rem;
 }
 
-@media (max-width: 500px) {
-  .nav {
-    all: initial;
-    display: flex;
-    background-color: #eee;
-    justify-content: space-around;
-    align-items: center;
-    height: 64px;
-    width: 100%;
-  }
-  .nav * {
-    all: initial;
-    font: bold;
-  }
+.nav.stroke ul li a,
+.nav.fill ul li a {
+  position: relative;
 }
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+.nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+.nav.fill ul li a {
+  transition: all 2s;
+}
+
+.nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+.nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+.nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+// .nav {
+//   display: flex;
+//   font-family: 'Roboto Mono', monospace;
+//   height: 8vh;
+//   width: 100%;
+//   padding: 0px 1rem;
+//   background-color: #0000cc;
+//   border-bottom: 2px solid #424542;
+//   justify-content: flex-end;
+//   gap: 1rem;
+//   align-items: center;
+//   user-select: none;
+//   -webkit-user-select: none;
+//   -khtml-user-select: none;
+//   -moz-user-select: none;
+//   -ms-user-select: none;
+// }
+
+// .nav * {
+//   color: white;
+//   font: bold;
+// }
+
+// .nav-link:hover,
+// .nav-link:focus {
+//   background: $gradient-radial-reverse;
+//   color: white;
+//   display: inline-block;
+//   line-height: 1rem;
+//   border-radius: 40px;
+//   outline: none;
+// }
+
+// @media (max-width: 500px) {
+//   .nav {
+//     display: flex;
+//     justify-content: space-around;
+//     align-items: center;
+//     height: 64px;
+//     width: 100%;
+//   }
+// }

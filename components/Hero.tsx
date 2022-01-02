@@ -2,31 +2,27 @@ import React from 'react'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import ProfilePic from '../public/IMG_0019.jpg'
+import { text } from 'stream/consumers'
 
 function Hero() {
     return (
-        <div className={styles.hero2}>
-          <div className={styles['hero-offset']}>
-            <div className={styles.box}>
-            
+        <div className={styles['hero-grid']}>
+          <div className={styles['text-box-1']}>
+            <div className={styles['text-box-header']}>
+              <h1>Cody</h1>
             </div>
-              <h3 className={styles.title}>
-                My name is Cody and I design and implement awesome web designs.
-              </h3>
-
+            <p>&ldquo;I&#39;m Cody, a full stack developer from the San Francisco Bay Area. I design and implement and awesome webpages!&ldquo;</p>
           </div>
-          
-          <div className={styles['image-wrapper']}>
-            <Image width={380} height={420} src={ProfilePic} alt="picture of my face" className={styles['image']} />
-
+          <div className={styles['text-box-2']}>
+            <h1>Cody</h1>
+            <p>
+              &ldquo;I love to learn cutting edge technologies and enjoy the feeling of overcoming a challenge.
+            </p>
+            <p>
+              I am skilled in HTML, CSS, Javascript and Typescript. I build most projects using front-end frameworks such as React and Svelte.
+              I am also skilled in back-end through NodeJs, Express, and a variety of databases.
+            </p>
           </div>
-
-          
-          
-
-          <p className={styles.description}>
-            I&#39;m a developer that loves to learn cutting edge technologies and enjoy the feeling of overcoming a challenge.
-          </p>
           <a href='#skills' className={[styles.arrow, styles.bounce].join(' ')}></a>
         </div>
     )

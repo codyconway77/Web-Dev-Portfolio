@@ -23,7 +23,7 @@ function UseDarkMode() {
         <a style={{cursor: 'pointer'}} onClick={() => {
             setTheme(theme => (theme === 'dark' ? 'light' : 'dark'))
         }}>
-            {theme === 'dark' ? 'Light' : 'Dark'} mode
+            {theme === 'dark' ? 'Light' : 'Dark'} Mode
         </a>
     )
 }

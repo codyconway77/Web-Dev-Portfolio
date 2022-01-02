@@ -18,13 +18,9 @@ a {
 }
 
 .dark {
-  background-color: #101010;
+  background-color: #121212;
 }
 
-.dark * {
+.dark > * {
   color: white;
-}
-
-.dark .box {
-  background-color: white;
 }
