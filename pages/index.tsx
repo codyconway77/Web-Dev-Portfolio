@@ -32,7 +32,7 @@ const Home: NextPage = () => {
           <h2 className={styles['skills']} id="skills">Skills</h2>
           <Skills />  
         </div>
-        <h2 id="projects">Projects</h2>
+        <h2 className={styles['projects']} id="projects">Projects</h2>
         <Projects />
         <h2 id="contact">Contact Me</h2>
         <Contact />

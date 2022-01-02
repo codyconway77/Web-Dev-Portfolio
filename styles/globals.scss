@@ -24,3 +24,8 @@ a {
 .dark > * {
   color: white;
 }
+
+.dark .arrow {
+  border-left: 0.5rem solid #121212;
+  border-bottom: 0.5rem solid #121212;
+}

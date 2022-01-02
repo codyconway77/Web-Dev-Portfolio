@@ -70,8 +70,8 @@
   grid-row: 9 / 11;
   align-self: start;
   justify-self: center;
-  border-left: 0.5rem solid #fff;
-  border-bottom: 0.5rem solid #fff;
+  border-left: 0.5rem solid #0000cc;
+  border-bottom: 0.5rem solid #0000cc;
   width: 2rem;
   height: 2rem;
   transform: rotate(-45deg);
@@ -193,7 +193,6 @@
 
 .hero-grid {
   display: grid;
-  background-color: #121212;
   height: 90vh;
   padding-top: 12px;
   margin-bottom: -4rem;
