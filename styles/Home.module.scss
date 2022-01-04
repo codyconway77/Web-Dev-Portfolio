@@ -70,8 +70,8 @@
   grid-row: 9 / 11;
   align-self: start;
   justify-self: center;
-  border-left: 0.5rem solid #0000cc;
-  border-bottom: 0.5rem solid #0000cc;
+  border-left: 0.5rem solid #cc00a3;
+  border-bottom: 0.5rem solid #cc00a3;
   width: 2rem;
   height: 2rem;
   transform: rotate(-45deg);
@@ -101,6 +101,7 @@
 
 .skills {
   z-index: 11;
+  margin-top: -1rem;
   font-family: 'Roboto Mono', monospace;
   color: #fff;
 }
@@ -110,6 +111,7 @@
 }
 
 .skills-container {
+  margin-top: -1rem;
   z-index: 11;
   display: flex;
   flex-wrap: wrap;
@@ -193,6 +195,8 @@
 
 .hero-grid {
   display: grid;
+  z-index: 13;
+  min-height: max-content;
   height: 90vh;
   padding-top: 12px;
   margin-bottom: -4rem;
@@ -221,8 +225,8 @@
   justify-content: center;
   align-items: center;
   z-index: 10;
+  height: fit-content;
   position: relative;
-  top: -3rem;
   width: 100%;
   padding: 15rem 0;
   clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 75%);
@@ -307,7 +311,7 @@
     margin-top: 4rem;
   }
   .text-box-1 {
-    margin-top: 3rem;
+    margin-top: 1rem;
     grid-column: 5 / 13;
   }
   .text-box-1 * {
@@ -315,7 +319,7 @@
   }
 
   .text-box-2 {
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-left: -3rem;
     grid-column: 1 / 12;
   }
