@@ -131,6 +131,8 @@
   border-radius: 15px;
   background-color: #eee;
   box-shadow: 5px 2px 5px #3494e6;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
 }
 
 .skills-card:hover {
@@ -184,6 +186,8 @@
   width: 142px;
   border-radius: 50%;
   box-shadow: 5px 2px 5px #3494e6;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
 }
 
 .contact-card:hover,
