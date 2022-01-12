@@ -5,10 +5,17 @@ import CalculatorPreview from '../public/calculator-preview.png'
 import PomodoroPreview from '../public/pomodoro-preview.png'
 import QuotePreview from '../public/random-quote.png'
 import MarkdownPreview from '../public/markdown-preview.png'
+import MaddenStatTracker from '../public/madden-stat-tracker.png'
 
 function Projects() {
     return (
         <div className={styles["projects-container"]}>
+          <div className={styles['project-card']}>
+            <h3>Madden Stat Tracker</h3>
+            <a href='https://madden-stat-tracker-2-0.vercel.app/login' target={'_blank'} rel='noreferrer'>
+              <Image src={MaddenStatTracker} placeholder="blur" alt="preview picture of a stat tracker website" className={styles['project-pic']} />
+            </a>  
+          </div>
           <div className={styles['project-card']}>
             <h3>Calculator App</h3>
             <a href='https://eager-euclid-acf984.netlify.app/' target={'_blank'} rel='noreferrer'>

@@ -1,8 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
-import ProfilePic from '../public/IMG_0019.jpg'
-import { text } from 'stream/consumers'
 
 function Hero() {
     return (
