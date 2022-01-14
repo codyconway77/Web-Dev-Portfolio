@@ -17,7 +17,7 @@ function Hero() {
             </p>
             <p>
               I am skilled in HTML, CSS, Javascript and Typescript. I build most projects using front-end frameworks such as React and Svelte.
-              I am also skilled in back-end through NodeJs, Express, and a variety of databases.
+              I am also skilled in back-end through NodeJs, Express, and a variety of databases.&ldquo;
             </p>
           </div>
           <a href='#skills' className={[styles.arrow, styles.bounce].join(' ')}></a>
